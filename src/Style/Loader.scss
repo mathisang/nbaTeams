@@ -1,0 +1,115 @@
+.loaderContent {
+  height: 100vh;
+  background: linear-gradient(-45deg, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 400% 400%;
+  animation: backgroundGradient 3s ease forwards;
+
+  .logoLoader {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    opacity: 0;
+    animation: logoFade 2s ease forwards, fadeOtoIOO 1.5s ease reverse forwards;
+    animation-delay: 2.75s, 10s;
+
+    #svg2 {
+      position: absolute;
+      left: 0
+    }
+  }
+
+  .progress {
+    opacity: 0;
+    position: relative;
+    height: 6px;
+    background: linear-gradient(90deg, #777D93 0%, #3F4B6A 104.91%);
+    border-radius: 6px;
+    width: 0;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: logoFade 1.5s ease forwards, progressWidth 1.5s ease forwards, progressWidth .75s ease reverse forwards;
+    animation-delay: 3.25s, 3.25s, 11s;
+
+    .progress-done {
+      opacity: 0;
+      background: #EBEBEB;
+      height: 100%;
+      border-radius: 6px;
+      width: 0;
+      transition: 1s ease 0.3s;
+    }
+  }
+
+  .backgroundLine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: .49;
+
+    div {
+      width: 1px;
+      height: 0%;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.43) 0%, rgba(255, 255, 255, 0.19) 100%);
+      animation: animationLine 1.6s ease forwards, fadeOtoIOO 1.5s ease reverse forwards;
+      animation-delay: 8.75s, 11s;
+    }
+  }
+}
+
+@keyframes animationLine {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes backgroundGradient {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes progressWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 400px;
+  }
+}
+
+@keyframes logoFade {
+  0% {
+    opacity: 0;
+    top: 50%;
+  }
+  65% {
+    opacity: 1;
+    top: 50%;
+  }
+  100% {
+    opacity: 1;
+    top: 45%;
+  }
+}
+
+@keyframes fadeOtoIOO {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
