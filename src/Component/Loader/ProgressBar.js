@@ -9,6 +9,7 @@ const Progress = () => {
 
     useEffect(() => {
         (gauge === 0 && (delay = 4600));
+        (gauge === 5 && console.log('END'));
         setTimeout(() => {
             setStyle({
                 opacity: 1,
