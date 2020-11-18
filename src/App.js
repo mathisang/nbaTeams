@@ -5,11 +5,16 @@ import Home from "./Component/Home.js";
 function App() {
     const [loaderStep, setLoaderStep] = useState(1);
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setLoaderOn(false);
-    //     }, 13000);
-    // }, );
+    useEffect(() => {
+        let Loaders = document.querySelectorAll('.loaderContent')[0];
+        Loaders.style.backgroundPosition = "50% 50%";
+        setTimeout(() => {
+            Loaders.style.backgroundPosition = "100% 50%";
+            setTimeout(() => {
+                setLoaderStep(0)
+            }, 3300);
+        }, 12000);
+    }, []);
 
     return (
         <div className="App">

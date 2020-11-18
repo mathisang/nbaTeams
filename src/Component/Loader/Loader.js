@@ -7,14 +7,9 @@ import ProgressBar from "./ProgressBar";
 function Loader({loaderStep, setLoaderStep}) {
     // useEffect(() => {
     //     setTimeout(() => {
-    //         setLoaderOn(false);
+    //         setLoaderStep(2);
     //     }, 13000);
-    // }, );
-    useEffect(() => {
-        console.log(loaderStep);
-        setLoaderStep(105);
-        console.log(loaderStep);
-    })
+    // }, []);
 
     return (
         <div className="loaderContent">

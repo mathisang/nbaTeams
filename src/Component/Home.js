@@ -4,7 +4,7 @@ import '../Style/App.scss';
 function Loader() {
     return (
         <div className="home">
-            Coucou
+            <p>Coucou</p>
         </div>
     );
 }

@@ -1,8 +1,10 @@
 .loaderContent {
   height: 100vh;
-  background: linear-gradient(-45deg, #182853, #0E1B3D, #00091c, #00091c);
-  background-size: 400% 400%;
-  animation: backgroundGradient 3s ease forwards;
+  background: linear-gradient(-45deg, #381313, #150000, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 0% 50%;
+  //animation: backgroundGradient 3s ease forwards;
+  transition: all 3s ease;
 
   .logoLoader {
     position: relative;
@@ -30,7 +32,7 @@
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: logoFade 1.5s ease forwards, progressWidth 1.5s ease forwards, progressWidth .75s ease reverse forwards;
+    animation: logoFade 1.5s ease forwards, progressWidth 1.5s ease forwards, progressWidthTest .75s ease forwards;
     animation-delay: 3.25s, 3.25s, 11s;
 
     .progress-done {
@@ -72,14 +74,14 @@
   }
 }
 
-@keyframes backgroundGradient {
-  from {
-    background-position: 0% 50%;
-  }
-  to {
-    background-position: 100% 50%;
-  }
-}
+//@keyframes backgroundGradient {
+//  from {
+//    background-position: 0% 50%;
+//  }
+//  to {
+//    background-position: 100% 50%;
+//  }
+//}
 
 @keyframes progressWidth {
   from {
@@ -87,6 +89,15 @@
   }
   to {
     width: 400px;
+  }
+}
+
+@keyframes progressWidthTest {
+  from {
+    width: 400px;
+  }
+  to {
+    width: 0;
   }
 }
 
