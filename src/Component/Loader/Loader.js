@@ -1,15 +1,10 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import '../../Style/Loader.scss';
 import BackgroundLine from "./BackgroundLine";
 import Logo from "./Logo";
 import ProgressBar from "./ProgressBar";
 
-function Loader({loaderStep, setLoaderStep}) {
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setLoaderStep(2);
-    //     }, 13000);
-    // }, []);
+function Loader() {
 
     return (
         <div className="loaderContent">
