@@ -16,8 +16,8 @@ function Logo() {
                 </g>
                 <defs>
                     <linearGradient id="paint0_linear" x1="126.844" y1="34.3966" x2="15.0061" y2="34.3966" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="white" stop-opacity="1"/>
-                        <stop offset="1" stop-color="#FFFAFA" stop-opacity="1"/>
+                        <stop stopColor="white" stopOpacity="1"/>
+                        <stop offset="1" stopColor="#FFFAFA" stopOpacity="1"/>
                     </linearGradient>
                 </defs>
             </svg>

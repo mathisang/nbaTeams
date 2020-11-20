@@ -2,6 +2,9 @@ import React, {useEffect, useState} from 'react';
 import Loader from "./Component/Loader/Loader";
 import Home from "./Component/Home.js";
 
+// CHANGER BG TEAM
+// intersection observer react
+
 function App() {
     const [loaderStep, setLoaderStep] = useState(0);
 
