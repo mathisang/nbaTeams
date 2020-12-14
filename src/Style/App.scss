@@ -95,29 +95,26 @@
   * {
     transition: all .3s;
   }
-  *:first-child {
-    transition-delay: 20ms;
-  }
   *:nth-child(2) {
-    transition-delay: 160ms;
+    transition-delay: 105ms;
   }
   *:nth-child(3) {
-    transition-delay: 60ms;
+    transition-delay: 30ms;
   }
   *:nth-child(5) {
-    transition-delay: 140ms;
+    transition-delay: 90ms;
   }
   *:nth-child(6) {
-    transition-delay: 80ms;
+    transition-delay: 45ms;
   }
   *:nth-child(7) {
-    transition-delay: 100ms;
+    transition-delay: 60ms;
   }
   *:nth-child(8) {
-    transition-delay: 120ms;
+    transition-delay: 75ms;
   }
   *:last-child {
-    transition-delay: 40ms;
+    transition-delay: 15ms;
   }
 }
 
