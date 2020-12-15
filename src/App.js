@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Loader from "./Component/Loader/Loader";
 import Home from "./Component/Home.js";
+import './Style/App.scss';
 
 // CHANGER BG TEAM
 // intersection observer react
@@ -14,7 +15,7 @@ function App() {
     //     setTimeout(() => {
     //         Loaders.style.backgroundPosition = "100% 50%";
     //         setTimeout(() => {
-    //             setLoaderStep(0)
+    //             setLoaderStep(1)
     //         }, 3300);
     //     }, 12000);
     // }, []);

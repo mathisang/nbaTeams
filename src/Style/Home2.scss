@@ -1,0 +1,69 @@
+.content {
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+
+  .Tilt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform-style: preserve-3d;
+
+    h1 {
+      text-align: center;
+      color: #FFFFFF;
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+      font-size: 60px;
+      line-height: 60px;
+      margin: 0 0 2rem;
+      transform: translateZ(60px);
+
+      span {
+        font-size: 100px;
+        line-height: 100px;
+      }
+    }
+
+    button {
+      font-family: 'Helvetica', sans-serif;
+      text-transform: uppercase;
+      color: white;
+      padding: .9rem 1.75rem;
+      border: none;
+      background: var(--colorButton) !important;
+      border-radius: 150px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transform: translateZ(60px);
+    }
+
+    button:hover {
+      background: var(--hoverButton) !important;
+    }
+  }
+}
+
+.teamHome {
+  max-width: 700px;
+  max-height: 450px;
+  width: 60vw;
+  height: 40vw;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+
+  .Tilt {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: var(--teamUrl);
+    background-size: cover;
+    transform-style: preserve-3d;
+  }
+}
