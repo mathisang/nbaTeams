@@ -1,5 +1,5 @@
 .teamHome {
-  max-width: 850px;
+  max-width: 800px;
   max-height: 500px;
   width: 60vw;
   height: 40vw;
@@ -26,6 +26,7 @@
       width: 100%;
       height: 100%;
       position: relative;
+      background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50.95%);
 
       h1 {
         font-family: 'Wigrum', sans-serif;
@@ -33,7 +34,7 @@
         color: #FFFFFF;
         text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
         font-size: 70px;
-        line-height: 60px;
+        line-height: 70px;
         position: absolute;
         top: 50%;
         left: 50%;
