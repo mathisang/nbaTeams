@@ -9,7 +9,11 @@
   src: url("http://localhost:3000/fonts/Wigrum-Regular.ttf");
 }
 
-.home {
+body {
+  //overflow: hidden;
+}
+
+body {
   //background: linear-gradient(-45deg, #e33d40, #770A0C, #182853, #0E1B3D, #00091c, #00091c);
   background: linear-gradient(-45deg, #02061A, #060B3E, #182853, #0E1B3D, #00091c, #00091c);
   background-size: 800% 400%;
@@ -20,14 +24,22 @@
   -moz-osx-font-smoothing: grayscale;
 
   .navigation {
-    padding: 3rem 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
     .leftSide, .rightSide {
       display: flex;
       align-items: center;
+      position: fixed;
+      margin: 3rem 5rem;
+      z-index: 99;
+    }
+
+    .rightSide {
+      right: 0;
+      top: 10px;
+    }
+
+    .leftSide {
+      left: 0;
+      top: 0;
     }
 
     .logo {

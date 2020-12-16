@@ -1,14 +1,26 @@
 import React from 'react';
 import '../Style/App.scss';
-import Navigation from "./Navigation/Navigation";
 import Team from "./Team.js";
+import ReactFullpage from '@fullpage/react-fullpage';
 
 function Loader() {
     return (
-        <div className="home">
-            <Navigation />
-            <Team />
-        </div>
+        <ReactFullpage
+            //fullpage options
+            licenseKey={process.env.REACT_APP_FULLPAGE_KEY}
+            scrollingSpeed={1000} /* Options here */
+            // fixedElements: {'.navigation'}
+
+            render={({state, fullpageApi}) => {
+                return (
+                    <ReactFullpage.Wrapper>
+                        <Team/>
+                        <Team/>
+                        <Team/>
+                    </ReactFullpage.Wrapper>
+                );
+            }}
+        />
     );
 }
 

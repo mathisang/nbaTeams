@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Loader from "./Component/Loader/Loader";
 import Home from "./Component/Home.js";
+import Navigation from "./Component/Navigation/Navigation";
 import './Style/App.scss';
 
 // CHANGER BG TEAM
@@ -25,7 +26,10 @@ function App() {
             {loaderStep !== 0 ? (
                 <Loader loaderStep={loaderStep} setLoaderStep={setLoaderStep} />
             ) : (
-                <Home/>
+                <div>
+                    <Navigation />
+                    <Home/>
+                </div>
             )}
         </div>
     );
