@@ -19,11 +19,17 @@ function Team() {
             <ThemeSwitcher theme={themeTeamBox}>
                 <div className="teamHome">
                     <Tilt className="Tilt" trackOnWindow={true} tiltMaxAngleX="8" tiltMaxAngleY="8" transitionSpeed="400" transitionEasing="cubic-bezier(0,.75,.77,.73)" tiltReverse={true} reset={false}>
+                       {/*// REVOIR LA TAILLE DE LA VIDEO*/}
+                        <video autoPlay muted loop id="myVideo">
+                            <source src="/images/teams/atlanta/compilation.mp4" type="video/mp4" />
+                        </video>
                         <div className="content">
                             <div className="Tilt-inner">
                                 <h1>Los Angeles<br/>
                                     <span>LAKERS</span></h1>
-
+                                <div className="smallInfos">
+                                    <p>LAL <span></span> Conférence Ouest</p>
+                                </div>
                                 <button>
                                     Voir l'équipe
                                 </button>
