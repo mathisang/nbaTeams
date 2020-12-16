@@ -13,9 +13,9 @@ const themeTeamBox = {
 
 //METTRE VIDEO PLUTOT QU'UNE IMG
 
-function Team() {
+function Team({team, city}) {
     return (
-        <div className="section">
+        <div className="section" id={team}>
             <ThemeSwitcher theme={themeTeamBox}>
                 <div className="teamHome">
                     <Tilt className="Tilt" trackOnWindow={true} tiltMaxAngleX="8" tiltMaxAngleY="8"
@@ -27,8 +27,8 @@ function Team() {
                         </video>
                         <div className="content">
                             <div className="Tilt-inner">
-                                <h1>Los Angeles<br/>
-                                    <span>LAKERS</span></h1>
+                                <h1>{city}<br/>
+                                    <span>{team}</span></h1>
                                 <div className="smallInfos">
                                     <p>LAL <span></span> Conférence Ouest</p>
                                 </div>
