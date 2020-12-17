@@ -12,8 +12,6 @@
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    //background: var(--teamUrl);
-    //background-size: cover;
     transform-style: preserve-3d;
     position: relative;
 
@@ -50,10 +48,12 @@
     line-height: 42px;
     margin: 0;
     cursor: default;
+    text-transform: capitalize;
 
     span {
       font-size: 110px;
       line-height: 105px;
+      text-transform: uppercase;
     }
   }
 
@@ -89,7 +89,7 @@
     color: white;
     padding: .75rem 1.5rem;
     border: none;
-    background: var(--colorButton) !important;
+    background: #e2a106;
     border-radius: 150px;
     font-size: 15px;
     font-weight: bold;
@@ -99,7 +99,7 @@
   }
 
   button:hover {
-    background: var(--hoverButton) !important;
+    background: #ecb01c;
   }
 }
 }

@@ -1,4 +1,5 @@
 //@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import 'variables.scss';
 
 @font-face {
   font-family: "Helvetica";
@@ -11,33 +12,15 @@
 
 body {
   //background: linear-gradient(-45deg, #e33d40, #770A0C, #182853, #0E1B3D, #00091c, #00091c);
-  //background: linear-gradient(-45deg, #02061A, #060B3E, #182853, #0E1B3D, #00091c, #00091c);
-  //background-size: 800% 400%;
-  //background-position: 100% 50%;
+  background: linear-gradient(-45deg, #02061A, #060B3E, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
   transition: all 1s ease;
   overflow: hidden !important;
   height: 100vh;
   font-family: 'Wigrum', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  #Lakers {
-    background: linear-gradient(-45deg, #02061A, #060B3E, #182853, #0E1B3D, #00091c, #00091c);
-    background-size: 800% 400%;
-    background-position: 100% 50%;
-  }
-
-  #Hawks {
-    background: linear-gradient(-45deg, #c66667, #661d1d, #182853, #0E1B3D, #00091c, #00091c);
-    background-size: 800% 400%;
-    background-position: 100% 50%;
-  }
-
-  #Rockets {
-    background: linear-gradient(-45deg, #e33d40, #770A0C, #182853, #0E1B3D, #00091c, #00091c);
-    background-size: 800% 400%;
-    background-position: 100% 50%;
-  }
 
   .navigation {
     .leftSide, .rightSide {

@@ -9,6 +9,19 @@ import './Style/App.scss';
 
 function App() {
     const [loaderStep, setLoaderStep] = useState(0);
+    const [teamData, setTeamData] = useState([]);
+
+    useEffect(() => {
+        fetch("https://www.balldontlie.io/api/v1/teams", {
+            headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+            },
+        })
+            .then((response) => response.json())
+            .then((data) => setTeamData(data.data));
+
+    }, []);
 
     // useEffect(() => {
     //     let Loaders = document.querySelectorAll('.loaderContent')[0];
@@ -28,7 +41,7 @@ function App() {
             ) : (
                 <div>
                     <Navigation />
-                    <Home/>
+                    <Home teamData={teamData} />
                 </div>
             )}
         </div>
