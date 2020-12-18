@@ -5,13 +5,20 @@ import Tilt from 'react-parallax-tilt';
 
 //METTRE VIDEO PLUTOT QU'UNE IMG
 
-function Team({team, city}) {
+function Team({teamData}) {
     const teamTheme = {
         // colorButton: '#F37178',
         // hoverButton: '#f3999d',
     }
+    let conference = "";
+    if(teamData.conference === "West") {
+        conference = "Ouest";
+    }
+    else {
+        conference = "Est";
+    }
     return (
-        <div className="section" id={team}>
+        <div className="section" id={teamData.name}>
             <ThemeSwitcher theme={teamTheme}>
                 <div className="teamHome">
                     <Tilt className="Tilt" trackOnWindow={true} tiltMaxAngleX="8" tiltMaxAngleY="8"
@@ -19,14 +26,14 @@ function Team({team, city}) {
                           reset={false}>
                         {/*// REVOIR LA TAILLE DE LA VIDEO*/}
                         <video autoPlay muted data-autoplay loop id="myVideo">
-                            <source data-src={"/images/teams/"+team+"/compilation.mp4"} type="video/mp4"/>
+                            <source data-src={"/images/teams/"+teamData.name+"/compilation.mp4"} type="video/mp4"/>
                         </video>
                         <div className="content">
                             <div className="Tilt-inner">
-                                <h1>{city}<br/>
-                                    <span>{team}</span></h1>
+                                <h1>{teamData.city}<br/>
+                                    <span>{teamData.name}</span></h1>
                                 <div className="smallInfos">
-                                    <p>LAL <span></span> Conférence Ouest</p>
+                                    <p>{teamData.abbreviation} <span></span> Conférence {conference}</p>
                                 </div>
                                 <button>
                                     Voir l'équipe

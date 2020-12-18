@@ -20,7 +20,7 @@ function Home({teamData}) {
                     <ReactFullpage.Wrapper>
                         <div className="section" id="removeSection">t</div>
                         {teamData.map(item => (
-                            <Team key={item.id} team={item.name} city={item.city} />
+                            <Team key={item.id} teamData={item} team={item.name} city={item.city} />
                         ))}
                     </ReactFullpage.Wrapper>
                 );
