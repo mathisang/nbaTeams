@@ -5,6 +5,8 @@ import Tilt from 'react-parallax-tilt';
 
 //METTRE VIDEO PLUTOT QU'UNE IMG
 
+//BOX SHADOW CARD
+
 function Team({teamData}) {
     const teamTheme = {
         // colorButton: '#F37178',
@@ -18,10 +20,10 @@ function Team({teamData}) {
         conference = "Est";
     }
     return (
-        <div className="section" id={teamData.name}>
+        <div className="section" id={teamData.name} data-anchor={teamData.name}>
             <ThemeSwitcher theme={teamTheme}>
                 <div className="teamHome">
-                    <Tilt className="Tilt" trackOnWindow={true} tiltMaxAngleX="8" tiltMaxAngleY="8"
+                    <Tilt className="Tilt" trackOnWindow={true} tiltMaxAngleX="20" tiltMaxAngleY="20"
                           transitionSpeed="400" transitionEasing="cubic-bezier(0,.75,.77,.73)" tiltReverse={true}
                           reset={false}>
                         {/*// REVOIR LA TAILLE DE LA VIDEO*/}

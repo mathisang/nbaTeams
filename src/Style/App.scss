@@ -5,6 +5,7 @@
   font-family: "Helvetica";
   src: url("http://localhost:3000/fonts/Helvetica.ttf");
 }
+
 @font-face {
   font-family: "Wigrum";
   src: url("http://localhost:3000/fonts/Wigrum-Regular.ttf");
@@ -60,6 +61,7 @@ body {
 
       svg {
         transition: all .4s;
+        z-index: 999;
       }
 
       .iconZoom {
@@ -108,27 +110,35 @@ body {
 
 #iconMenu {
   cursor: pointer;
+
   * {
     transition: all .3s;
   }
+
   *:nth-child(2) {
     transition-delay: 100ms;
   }
+
   *:nth-child(3) {
     transition-delay: 30ms;
   }
+
   *:nth-child(5) {
     transition-delay: 90ms;
   }
+
   *:nth-child(6) {
     transition-delay: 45ms;
   }
+
   *:nth-child(7) {
     transition-delay: 60ms;
   }
+
   *:nth-child(8) {
     transition-delay: 75ms;
   }
+
   *:last-child {
     transition-delay: 15ms;
   }
@@ -138,24 +148,31 @@ body {
   *:first-child {
     transform: translateX(-2px);
   }
+
   *:nth-child(2) {
     transform: translate(-2px, 2px);
   }
+
   *:nth-child(3) {
     transform: translateY(-2px);
   }
+
   *:nth-child(5) {
     transform: translateY(2px);
   }
+
   *:nth-child(6) {
     transform: translate(2px, -2px);
   }
+
   *:nth-child(7) {
     transform: translateX(2px);
   }
+
   *:nth-child(8) {
     transform: translate(2px, 2px);
   }
+
   *:last-child {
     transform: translate(-2px, -2px);
   }
@@ -163,12 +180,96 @@ body {
 
 @keyframes enterPressed {
   0% {
-    opacity: .23;
+    opacity: .35;
   }
   50% {
     opacity: 1;
   }
   100% {
-    opacity: .23;
+    opacity: .35;
+  }
+}
+
+.navigation.menuOpened {
+  position: absolute;
+  z-index: 999;
+}
+
+.navigation.menuOpened .search {
+  display: none;
+}
+
+.navigation.menuOpened .logo {
+  opacity: .25;
+}
+
+#menu {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, .85);
+  position: fixed;
+  z-index: 99;
+  display: none;
+
+  .contentMenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem 5rem 5rem;
+    width: fit-content;
+    margin-top: 110px;
+    max-height: calc(100% - 6rem - 110px);
+
+    .letterGroup {
+      color: white;
+      display: flex;
+      width: fit-content;
+      flex-direction: column;
+      margin-right: 5rem;
+
+      span {
+        font-size: 24px;
+        width: max-content;
+        display: block;
+        font-weight: 600;
+        margin: 1.5rem 0 .25rem;
+      }
+
+      p {
+        font-size: 20px;
+        margin: .5rem 0 0;
+        width: max-content;
+        cursor: pointer;
+        position: relative;
+        display: block;
+      }
+
+      p:before, p:after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        top: 50%;
+      }
+
+      p:before {
+        left: -1px;
+      }
+      p:after {
+        right: 1px;
+        transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+
+      p:hover:before {
+        width: 100%;
+        transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+
+      p:hover:after {
+        background: transparent;
+        width: 100%;
+        transition: 0s;
+      }
+    }
   }
 }

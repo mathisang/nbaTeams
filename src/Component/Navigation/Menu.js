@@ -1,8 +1,24 @@
 import React from 'react';
 
 function Menu() {
+
+    const openMenu = () => {
+        if(document.getElementById('iconMenu').classList.contains('openMenu')) {
+            document.getElementById('iconMenu').classList.remove('openMenu')
+            window.fullpage_api.setAllowScrolling(false);
+            document.getElementById('menu').style.display = "block";
+            document.getElementsByClassName('navigation')[0].classList.add('menuOpened');
+        }
+        else {
+            document.getElementById('iconMenu').classList.add('openMenu')
+            window.fullpage_api.setAllowScrolling(true);
+            document.getElementById('menu').style.display = "none";
+            document.getElementsByClassName('navigation')[0].classList.remove('menuOpened');
+        }
+    }
+
     return (
-        <svg className="iconMenu" id="iconMenu" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" style={{display: "block"}}>
+        <svg onClick={() => openMenu()} className="iconMenu openMenu" id="iconMenu" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" style={{display: "block"}}>
             <rect x="3" y="14" width="8" height="8" fill="white"/>
             <path d="M6 33C4.34315 33 3 31.6569 3 30L3 25L11 25L11 33L6 33Z" fill="white"/>
             <path d="M14 3H22V11H14V3Z" fill="white"/>

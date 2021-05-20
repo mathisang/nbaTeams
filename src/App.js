@@ -3,6 +3,7 @@ import Loader from "./Component/Loader/Loader";
 import Home from "./Component/Home.js";
 import Navigation from "./Component/Navigation/Navigation";
 import './Style/App.scss';
+import Menu from "./Component/Menu";
 
 // CHANGER BG TEAM
 // intersection observer react
@@ -29,7 +30,7 @@ function App() {
     //     setTimeout(() => {
     //         Loaders.style.backgroundPosition = "100% 50%";
     //         setTimeout(() => {
-    //             setLoaderStep(1)
+    //             setLoaderStep(0)
     //         }, 3300);
     //     }, 12000);
     // }, []);
@@ -41,6 +42,7 @@ function App() {
             ) : (
                 <div>
                     <Navigation />
+                    <Menu teamData={teamData} />
                     <Home teamData={teamData} />
                 </div>
             )}

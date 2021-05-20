@@ -1,44 +1,543 @@
-#Lakers {
-  background: linear-gradient(-45deg, #02061A, #060B3E, #182853, #0E1B3D, #00091c, #00091c);
+// A REVOIR
+// BULLS, 76ERS
+
+#jumpHawks:before, #jumpHawks:after, #jumpHawks:hover:before {
+  background: #ce3e55;
+}
+#jumpCeltics:before, #jumpCeltics:after, #jumpCeltics:hover:before {
+  background: #42c982;
+}
+#jumpNets:before, #jumpNets:after, #jumpNets:hover:before {
+  background: #404040;
+}
+#jumpHornets:before, #jumpHornets:after, #jumpHornets:hover:before {
+  background: #2fb9d2;
+}
+#jumpBulls:before, #jumpBulls:after, #jumpBulls:hover:before {
+  background: #ce425c;
+}
+#jumpCavaliers:before, #jumpCavaliers:after, #jumpCavaliers:hover:before {
+  background: #893b53;
+}
+#jumpMavericks:before, #jumpMavericks:after, #jumpMavericks:hover:before {
+  background: #2a7ecd;
+}
+#jumpNuggets:before, #jumpNuggets:after, #jumpNuggets:hover:before {
+  background: #1c3e6a;
+}
+#jumpPistons:before, #jumpPistons:after, #jumpPistons:hover:before {
+  background: #e05075;
+}
+#jumpWarriors:before, #jumpWarriors:after, #jumpWarriors:hover:before {
+  background: #33579a;
+}
+#jumpRockets:before, #jumpRockets:after, #jumpRockets:hover:before {
+  background: #d74552;
+}
+#jumpPacers:before, #jumpPacers:after, #jumpPacers:hover:before {
+  background: #ffd148;
+}
+#jumpClippers:before, #jumpClippers:after, #jumpClippers:hover:before {
+  background: #2080c7;
+}
+#jumpLakers:before, #jumpLakers:after, #jumpLakers:hover:before {
+  background: #ecbb49;
+}
+#jumpGrizzlies:before, #jumpGrizzlies:after, #jumpGrizzlies:hover:before {
+  background: #6987ad;
+}
+#jumpHeat:before, #jumpHeat:after, #jumpHeat:hover:before {
+  background: #b31d4b;
+}
+#jumpBucks:before, #jumpBucks:after, #jumpBucks:hover:before {
+  background: #186536;
+}
+#jumpTimberwolves:before, #jumpTimberwolves:after, #jumpTimberwolves:hover:before {
+  background: #257faf;
+}
+#jumpPelicans:before, #jumpPelicans:after, #jumpPelicans:hover:before {
+  background: #ceaf7c;
+}
+#jumpKnicks:before, #jumpKnicks:after, #jumpKnicks:hover:before {
+  background: #dc975a;
+}
+#jumpThunder:before, #jumpThunder:after, #jumpThunder:hover:before {
+  background: #f58270;
+}
+#jumpMagic:before, #jumpMagic:after, #jumpMagic:hover:before {
+  background: #648cc4;
+}
+#jump76ers:before, #jump76ers:after, #jump76ers:hover:before {
+  background: #5f83bb;
+}
+#jumpSuns:before, #jumpSuns:after, #jumpSuns:hover:before {
+  background: #ffb15d;
+}
+#jumpTrail\ Blazers:before, #jumpTrail\ Blazers:after, #jumpTrail\ Blazers:hover:before {
+  background: #ff465b;
+}
+#jumpKings:before, #jumpKings:after, #jumpKings:hover:before {
+  background: #704a8e;
+}
+#jumpSpurs:before, #jumpSpurs:after, #jumpSpurs:hover:before {
+  background: #d2d2d2;
+}
+#jumpRaptors:before, #jumpRaptors:after, #jumpRaptors:hover:before {
+  background: #c4494e;
+}
+#jumpJazz:before, #jumpJazz:after, #jumpJazz:hover:before {
+  background: #1b3a5e;
+}
+#jumpWizards:before, #jumpWizards:after, #jumpWizards:hover:before {
+  background: #cb4c61;
+}
+
+#Hawks {
+  background: linear-gradient(-45deg, #ce3e55, #C8102E, #182853, #0E1B3D, #00091c, #00091c);
   background-size: 800% 400%;
   background-position: 100% 50%;
 
   .content {
     button {
-      background: #e2a106 !important;
+      background: #ce3e55 !important;
     }
     button:hover {
-      background: #ecb01c !important;
+      background: #ba3046 !important;
     }
   }
 }
 
-#Hawks {
-  background: linear-gradient(-45deg, #c66667, #661d1d, #182853, #0E1B3D, #00091c, #00091c);
+#Celtics {
+  background: linear-gradient(-45deg, #42c982, #00853F, #182853, #0E1B3D, #00091c, #00091c);
   background-size: 800% 400%;
   background-position: 100% 50%;
 
   .content {
     button {
-      background: #e20606 !important;
+      background: #42c982 !important;
     }
     button:hover {
-      background: #ec1c1c !important;
+      background: #28a865 !important;
+    }
+  }
+}
+
+#Nets {
+  background: linear-gradient(-45deg, #404040, #1c1c1c, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+    button {
+      background: #404040 !important;
+    }
+    button:hover {
+      background: #2f2e2e !important;
+    }
+  }
+}
+
+#Hornets {
+  background: linear-gradient(-45deg, #2fb9d2, #008DA8, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+    button {
+      background: #2fb9d2 !important;
+    }
+    button:hover {
+      background: #1d97ad !important;
+    }
+  }
+}
+
+#Bulls {
+  background: linear-gradient(-45deg, #ce425c, #D2153A, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+    button {
+      background: #ce425c !important;
+    }
+    button:hover {
+      background: #ba344d !important;
+    }
+  }
+}
+
+#Cavaliers {
+  background: linear-gradient(-45deg, #893b53, #6E253C, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+    button {
+      background: #893b53 !important;
+    }
+    button:hover {
+      background: #7b3148 !important;
+    }
+  }
+}
+
+#Mavericks {
+  background: linear-gradient(-45deg, #2a7ecd, #1061AC, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+    button {
+      background: #2a7ecd !important;
+    }
+    button:hover {
+      background: #2070bb !important;
+    }
+  }
+}
+
+#Nuggets {
+  background: linear-gradient(-45deg, #1c3e6a, #0B2240, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+    button {
+      background: #1c3e6a !important;
+    }
+    button:hover {
+      background: #15345c !important;
+    }
+  }
+}
+
+#Pistons {
+  background: linear-gradient(-45deg, #e05075, #CB1D4B, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+    button {
+      background: #e05075 !important;
+    }
+    button:hover {
+      background: #ce3f65 !important;
+    }
+  }
+}
+
+#Warriors {
+  background: linear-gradient(-45deg, #33579a, #1D428A, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+    button {
+      background: #33579a !important;
+    }
+    button:hover {
+      background: #264887 !important;
     }
   }
 }
 
 #Rockets {
-  background: linear-gradient(-45deg, #e33d40, #770A0C, #182853, #0E1B3D, #00091c, #00091c);
+  background: linear-gradient(-45deg, #d74552, #C81C2B, #182853, #0E1B3D, #00091c, #00091c);
   background-size: 800% 400%;
   background-position: 100% 50%;
 
   .content {
     button {
-      background: #062be2 !important;
+      background: #d74552 !important;
     }
     button:hover {
-      background: #1c3fec !important;
+      background: #c63643 !important;
     }
+  }
+}
+
+#Pacers {
+  background: linear-gradient(-45deg, #ffd148, #FBBF15, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+    button {
+      background: #ffd148 !important;
+    }
+    button:hover {
+      background: #ecc03c !important;
+    }
+  }
+}
+
+#Clippers {
+  background: linear-gradient(-45deg, #2080c7, #006BB9, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+    button {
+      background: #2080c7 !important;
+    }
+    button:hover {
+      background: #166fb1 !important;
+    }
+  }
+}
+
+#Lakers {
+  background: linear-gradient(-45deg, #f5c75f, #FCB825, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #ecbb49 !important;
+   }
+   button:hover {
+     background: #dcac3c !important;
+   }
+  }
+}
+
+#Grizzlies {
+  background: linear-gradient(-45deg, #6987ad, #4F77AC, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #6987ad !important;
+   }
+   button:hover {
+     background: #526f93 !important;
+   }
+  }
+}
+
+#Heat {
+  background: linear-gradient(-45deg, #b31d4b, #98002E, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #b31d4b !important;
+   }
+   button:hover {
+     background: #9a143d !important;
+   }
+  }
+}
+
+#Bucks {
+  background: linear-gradient(-45deg, #186536, #00471B, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #186536 !important;
+   }
+   button:hover {
+     background: #12582d !important;
+   }
+  }
+}
+
+#Timberwolves {
+  background: linear-gradient(-45deg, #257faf, #006195, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #257faf !important;
+   }
+   button:hover {
+     background: #17648e !important;
+   }
+  }
+}
+
+#Pelicans {
+  background: linear-gradient(-45deg, #ceaf7c, #C09856, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #ceaf7c !important;
+   }
+   button:hover {
+     background: #b49864 !important;
+   }
+  }
+}
+
+#Knicks {
+  background: linear-gradient(-45deg, #dc975a, #DC8335, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #dc975a !important;
+   }
+   button:hover {
+     background: #c6844a !important;
+   }
+  }
+}
+
+#Thunder {
+  background: linear-gradient(-45deg, #f58270, #F46148, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #f58270 !important;
+   }
+   button:hover {
+     background: #db6b5a !important;
+   }
+  }
+}
+
+#Magic {
+  background: linear-gradient(-45deg, #648cc4, #4174BA, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #648cc4 !important;
+   }
+   button:hover {
+     background: #4a6fa3 !important;
+   }
+  }
+}
+
+#\37 6ers {
+  background: linear-gradient(-45deg, #5f83bb, #3967AF, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #5f83bb !important;
+   }
+   button:hover {
+     background: #496ba0 !important;
+   }
+  }
+}
+
+#Suns {
+  background: linear-gradient(-45deg, #ffb15d, #FF9C31, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #ffb15d !important;
+   }
+   button:hover {
+     background: #e59a4a !important;
+   }
+  }
+}
+
+#Trail\ Blazers {
+  background: linear-gradient(-45deg, #ff465b, #FF0D27, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #ff465b !important;
+   }
+   button:hover {
+     background: #e03448 !important;
+   }
+  }
+}
+
+#Kings {
+  background: linear-gradient(-45deg, #704a8e, #5B2B82, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #704a8e !important;
+   }
+   button:hover {
+     background: #5c3a78 !important;
+   }
+  }
+}
+
+#Spurs {
+  background: linear-gradient(-45deg, #e5e5e5, #BCBCBC, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #d2d2d2 !important;
+   }
+   button:hover {
+     background: #bdbdbd !important;
+   }
+  }
+}
+
+#Raptors {
+  background: linear-gradient(-45deg, #c4494e, #BD1B21, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #c4494e !important;
+   }
+   button:hover {
+     background: #a8373c !important;
+   }
+  }
+}
+
+#Jazz {
+  background: linear-gradient(-45deg, #1b3a5e, #001E3F, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #1b3a5e !important;
+   }
+   button:hover {
+     background: #122b49 !important;
+   }
+  }
+}
+
+#Wizards {
+  background: linear-gradient(-45deg, #cb4c61, #C31E3A, #182853, #0E1B3D, #00091c, #00091c);
+  background-size: 800% 400%;
+  background-position: 100% 50%;
+
+  .content {
+   button {
+     background: #cb4c61 !important;
+   }
+   button:hover {
+     background: #ac384c !important;
+   }
   }
 }

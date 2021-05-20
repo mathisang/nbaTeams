@@ -7,10 +7,11 @@ function Search() {
             if($('.search input').is(":focus")) {
                 $('.search .iconZoom').css('opacity', '1')
                 $('.search input').css('color', '#ffffff')
+                $('.search').css('border-color', 'rgba(255, 255, 255, 0.4)')
                 if($('.search input').val() !== "") {
                     $('.search input').css('width', '87%')
                     $('.search').css('width', '440px')
-                    $('.search .iconEnter').css('opacity', '.23')
+                    $('.search .iconEnter').css('opacity', '.35')
                 }
             }
             else {
@@ -18,6 +19,7 @@ function Search() {
                 $('.search input').css({'width': '86%', 'color': 'rgba(255,255,255,0.7)'})
                 $('.search').css('width', '400px')
                 $('.search .iconEnter').css('opacity', '0')
+                $('.search').css('border-color', 'rgba(255, 255, 255, 0.14)')
             }
         });
 
@@ -42,7 +44,7 @@ function Search() {
             else {
                 $(this).css('width', '87%')
                 $('.search').css('width', '440px')
-                $('.search .iconEnter').css('opacity', '.23')
+                $('.search .iconEnter').css('opacity', '.35')
             }
         });
     }, []);
