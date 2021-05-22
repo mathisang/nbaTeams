@@ -110,6 +110,7 @@ body {
 
 #iconMenu {
   cursor: pointer;
+  transition: all .3s;
 
   * {
     transition: all .3s;
@@ -175,6 +176,39 @@ body {
 
   *:last-child {
     transform: translate(-2px, -2px);
+  }
+}
+
+#iconMenu.opened {
+  transform: rotate(45deg);
+
+  *:first-child {
+    width: 32px;
+  }
+
+  *:nth-child(2), *:nth-child(6), *:nth-child(8), *:last-child, *:nth-child(5), *:nth-child(7), *:nth-child(3) {
+    opacity: 0;
+  }
+
+  *:nth-child(4) {
+    height: 32px;
+    transform: translateY(-12px);
+  }
+}
+
+#iconMenu.opened:hover {
+  transform: rotate(45deg) translate(1px, 2px);
+
+  *:first-child {
+    width: 28px;
+    height: 6px;
+    transform: translateX(0);
+  }
+
+  *:nth-child(4) {
+    height: 28px;
+    width: 6px;
+    transform: translateY(-12px);
   }
 }
 
@@ -248,8 +282,9 @@ body {
         content: '';
         position: absolute;
         width: 0%;
-        height: 3px;
-        top: 50%;
+        height: 12px;
+        top: 42%;
+        z-index: -1;
       }
 
       p:before {

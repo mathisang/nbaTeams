@@ -8,12 +8,14 @@ function Menu() {
             window.fullpage_api.setAllowScrolling(false);
             document.getElementById('menu').style.display = "block";
             document.getElementsByClassName('navigation')[0].classList.add('menuOpened');
+            document.getElementById('iconMenu').classList.add('opened');
         }
         else {
             document.getElementById('iconMenu').classList.add('openMenu')
             window.fullpage_api.setAllowScrolling(true);
             document.getElementById('menu').style.display = "none";
             document.getElementsByClassName('navigation')[0].classList.remove('menuOpened');
+            document.getElementById('iconMenu').classList.remove('opened');
         }
     }
 
