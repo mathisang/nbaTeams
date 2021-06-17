@@ -4,7 +4,7 @@ import Team from "./Team.js";
 import ReactFullpage from '@fullpage/react-fullpage';
 import $ from 'jquery';
 
-function Home({teamData}) {
+function Home({teamData, setTeamDetails}) {
 
     console.log($('#removeSection'));
     $('#removeSection').remove();
@@ -21,7 +21,7 @@ function Home({teamData}) {
                         <div className="section" id="removeSection">
                         </div>
                         {teamData.map(item => (
-                            <Team key={item.id} teamData={item} team={item.name} city={item.city} />
+                            <Team key={item.id} teamData={item} team={item.name} city={item.city} setTeamDetails={setTeamDetails}/>
                         ))}
                     </ReactFullpage.Wrapper>
                 );

@@ -7,7 +7,7 @@ import Tilt from 'react-parallax-tilt';
 
 //BOX SHADOW CARD
 
-function Team({teamData}) {
+function Team({teamData, setTeamDetails}) {
     const teamTheme = {
         // colorButton: '#F37178',
         // hoverButton: '#f3999d',
@@ -37,7 +37,7 @@ function Team({teamData}) {
                                 <div className="smallInfos">
                                     <p>{teamData.abbreviation} <span></span> Conférence {conference}</p>
                                 </div>
-                                <button>
+                                <button onClick={() => setTeamDetails(teamData.id)}>
                                     Voir l'équipe
                                 </button>
                             </div>

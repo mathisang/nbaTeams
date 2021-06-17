@@ -3,12 +3,12 @@ import Logo from "./Logo";
 import Search from "../Navigation/Search";
 import Menu from "../Navigation/Menu";
 
-function Navigation() {
+function Navigation({teamData}) {
     return (
         <div className="navigation">
             <div className="leftSide">
                 <Logo />
-                <Search />
+                <Search teamData={teamData} />
             </div>
             <div className="rightSide">
                 <Menu />

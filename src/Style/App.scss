@@ -1,15 +1,5 @@
-//@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import 'variables.scss';
-
-@font-face {
-  font-family: "Helvetica";
-  src: url("http://localhost:3000/fonts/Helvetica.ttf");
-}
-
-@font-face {
-  font-family: "Wigrum";
-  src: url("http://localhost:3000/fonts/Wigrum-Regular.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap');
 
 body {
   //background: linear-gradient(-45deg, #e33d40, #770A0C, #182853, #0E1B3D, #00091c, #00091c);
@@ -19,7 +9,7 @@ body {
   transition: all 1s ease;
   overflow: hidden !important;
   height: 100vh;
-  font-family: 'Wigrum', sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -48,7 +38,7 @@ body {
     }
 
     .search {
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.11);
       border: 1px solid rgba(255, 255, 255, 0.14);
       border-radius: 10px;
       width: 400px;
@@ -58,6 +48,7 @@ body {
       align-items: center;
       padding: 0 .75rem;
       transition: all .3s ease;
+      position: relative;
 
       svg {
         transition: all .4s;
@@ -104,7 +95,50 @@ body {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
+
+      &.error {
+        border: 1px solid #ff1414 !important;
+        color: #ff1414;
+        animation-name: bounce;
+        animation-duration: .5s;
+        animation-delay: 0.25s;
+      }
     }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(0px);
+    timing-function: ease-in;
+  }
+  37% {
+    transform: translateX(5px);
+    timing-function: ease-out;
+  }
+  55% {
+    transform: translateX(-5px);
+    timing-function: ease-in;
+  }
+  73% {
+    transform: translateX(4px);
+    timing-function: ease-out;
+  }
+  82% {
+    transform: translateX(-4px);
+    timing-function: ease-in;
+  }
+  91% {
+    transform: translateX(2px);
+    timing-function: ease-out;
+  }
+  96% {
+    transform: translateX(-2px);
+    timing-function: ease-in;
+  }
+  100% {
+    transform: translateX(0px);
+    timing-function: ease-in;
   }
 }
 
@@ -243,7 +277,16 @@ body {
   background: rgba(0, 0, 0, .85);
   position: fixed;
   z-index: 99;
-  display: none;
+
+  &.animationMenu {
+    left: 100vw;
+    animation: openMenu .5s ease-out forwards;
+  }
+  &.animationMenuClose {
+    left: 0;
+    animation: closeMenu .3s ease-out forwards;
+    animation-delay: .5s;
+  }
 
   .contentMenu {
     display: flex;
@@ -260,6 +303,114 @@ body {
       width: fit-content;
       flex-direction: column;
       margin-right: 5rem;
+      position: relative;
+
+      &.animationBloc {
+        opacity: 0;
+        top: 4rem;
+        animation: showGroup .5s ease-out forwards;
+
+        &:nth-child(1) {
+          animation-delay: .2s;
+        }
+        &:nth-child(2) {
+          animation-delay: .25s;
+        }
+        &:nth-child(3) {
+          animation-delay: .3s;
+        }
+        &:nth-child(4) {
+          animation-delay: .35s;
+        }
+        &:nth-child(5) {
+          animation-delay: .4s;
+        }
+        &:nth-child(6) {
+          animation-delay: .45s;
+        }
+        &:nth-child(7) {
+          animation-delay: .5s;
+        }
+        &:nth-child(8) {
+          animation-delay: .55s;
+        }
+        &:nth-child(9) {
+          animation-delay: .6s;
+        }
+        &:nth-child(10) {
+          animation-delay: .65s;
+        }
+        &:nth-child(11) {
+          animation-delay: .7s;
+        }
+        &:nth-child(12) {
+          animation-delay: .75s;
+        }
+        &:nth-child(13) {
+          animation-delay: .8s;
+        }
+        &:nth-child(14) {
+          animation-delay: .85s;
+        }
+        &:nth-child(15) {
+          animation-delay: .9s;
+        }
+        &:nth-child(16) {
+          animation-delay: .95s;
+        }
+      }
+
+      &.animationBlocReverse {
+        opacity: 1;
+        top: 0;
+        animation: showGroupReverse .2s ease-out forwards;
+
+        &:nth-child(1) {
+          animation-delay: .3s;
+        }
+        &:nth-child(2) {
+          animation-delay: .28s;
+        }
+        &:nth-child(3) {
+          animation-delay: .26s;
+        }
+        &:nth-child(4) {
+          animation-delay: .24s;
+        }
+        &:nth-child(5) {
+          animation-delay: .22s;
+        }
+        &:nth-child(6) {
+          animation-delay: .2s;
+        }
+        &:nth-child(7) {
+          animation-delay: .18s;
+        }
+        &:nth-child(8) {
+          animation-delay: .16s;
+        }
+        &:nth-child(9) {
+          animation-delay: .14s;
+        }
+        &:nth-child(10) {
+          animation-delay: .12s;
+        }
+        &:nth-child(11) {
+          animation-delay: .1s;
+        }
+        &:nth-child(12) {
+          animation-delay: .08s;
+        }
+        &:nth-child(13) {
+          animation-delay: .06s;
+        }
+        &:nth-child(14) {
+          animation-delay: .04s;
+        }
+        &:nth-child(15) {
+          animation-delay: .02s;
+        }
+      }
 
       span {
         font-size: 24px;
@@ -307,4 +458,56 @@ body {
       }
     }
   }
+}
+
+@keyframes openMenu {
+  from {
+    left: 100vw;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@keyframes closeMenu {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 100vw;
+  }
+}
+
+@keyframes showGroup {
+  from {
+    top: 4rem;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes showGroupReverse {
+  from {
+    top: 0;
+    opacity: 1;
+  }
+
+  to {
+    top: 4rem;
+    opacity: 0;
+  }
+}
+
+.suggestions {
+  position: absolute;
+  left: calc(.75rem + 19.75px + .75rem);
+  top: 12px;
+  z-index: -1;
+  color: rgba(255,255,255,.4);
 }

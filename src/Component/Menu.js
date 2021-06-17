@@ -23,12 +23,23 @@ function Menu({teamData}) {
     // Sort by city OR sort by Name
 
     const jumpTo = (team) => {
-        window.fullpage_api.moveTo(team);
-        document.getElementById('iconMenu').classList.add('openMenu')
-        window.fullpage_api.setAllowScrolling(true);
-        document.getElementById('menu').style.display = "none";
-        document.getElementsByClassName('navigation')[0].classList.remove('menuOpened');
+        for (let n = 0; n < 16; n++) {
+            document.getElementsByClassName('letterGroup')[n].classList.remove('animationBloc');
+            document.getElementsByClassName('letterGroup')[n].classList.add('animationBlocReverse');
+        }
+        document.getElementById('menu').classList.remove('animationMenu');
+        document.getElementById('menu').classList.add('animationMenuClose');
+        setTimeout(function () {
+            window.fullpage_api.moveTo(team);
+            window.fullpage_api.setAllowScrolling(true);
+            document.getElementsByClassName('navigation')[0].classList.remove('menuOpened');
+            document.getElementById('iconMenu').classList.add('openMenu')
+            document.getElementById('iconMenu').classList.remove('opened');
+        }, 750)
+
     }
+
+    let i = 1;
 
     return (
         <div id="menu">

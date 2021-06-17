@@ -4,12 +4,14 @@ import Home from "./Component/Home.js";
 import Navigation from "./Component/Navigation/Navigation";
 import './Style/App.scss';
 import Menu from "./Component/Menu";
+import Details from "./Component/Details";
 
 // CHANGER BG TEAM
 // intersection observer react
 
 function App() {
     const [loaderStep, setLoaderStep] = useState(0);
+    const [teamDetails, setTeamDetails] = useState("");
     const [teamData, setTeamData] = useState([]);
 
     useEffect(() => {
@@ -39,11 +41,13 @@ function App() {
         <div className="App">
             {loaderStep !== 0 ? (
                 <Loader loaderStep={loaderStep} setLoaderStep={setLoaderStep} />
+            ) : teamDetails !== "" ? (
+                <Details teamDetails={teamDetails} setTeamDetails={setTeamDetails} />
             ) : (
                 <div>
-                    <Navigation />
+                    <Navigation teamData={teamData} />
                     <Menu teamData={teamData} />
-                    <Home teamData={teamData} />
+                    <Home teamData={teamData} setTeamDetails={setTeamDetails} />
                 </div>
             )}
         </div>
