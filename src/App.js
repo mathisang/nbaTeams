@@ -5,6 +5,7 @@ import Navigation from "./Component/Navigation/Navigation";
 import './Style/App.scss';
 import Menu from "./Component/Menu";
 import Details from "./Component/Details";
+import teams from "./Data/teams.json"
 
 // CHANGER BG TEAM
 // intersection observer react
@@ -15,15 +16,19 @@ function App() {
     const [teamData, setTeamData] = useState([]);
 
     useEffect(() => {
-        fetch("https://www.balldontlie.io/api/v1/teams", {
-            headers: {
-                Accept: "application/json",
-                "Content-Type": "application/json",
-            },
-        })
-            .then((response) => response.json())
-            .then((data) => setTeamData(data.data));
+        // fetch("http://localhost:1245/teams", {
+        //     headers: {
+        //         Accept: "application/json",
+        //         "Content-Type": "application/json",
+        //     },
+        // })
+        //     .then((response) => response.json())
+        //     .then((data) => setTeamData(data));
 
+        // const curry = NBA.findPlayer('Stephen Curry');
+        // console.log(NBA);
+
+        setTeamData(teams);
     }, []);
 
     // useEffect(() => {

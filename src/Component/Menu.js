@@ -8,10 +8,10 @@ function Menu({teamData}) {
     useEffect(() => {
         let data = teamData.reduce((r, e) => {
 
-            let letter = e.city[0];
+            let letter = e.location[0];
 
-            if (!r[letter]) r[letter] = { letter, cities: [[e.city, e.name]] }
-            else r[letter].cities.push([e.city, e.name]);
+            if (!r[letter]) r[letter] = { letter, cities: [[e.location, e.simpleName]] }
+            else r[letter].cities.push([e.location, e.simpleName]);
 
             return r;
         }, {});

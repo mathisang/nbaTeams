@@ -12,15 +12,15 @@ function Team({teamData, setTeamDetails}) {
         // colorButton: '#F37178',
         // hoverButton: '#f3999d',
     }
-    let conference = "";
-    if(teamData.conference === "West") {
-        conference = "Ouest";
-    }
-    else {
-        conference = "Est";
-    }
+    // let conference = "";
+    // if(teamData.conference === "West") {
+    //     conference = "Ouest";
+    // }
+    // else {
+    //     conference = "Est";
+    // }
     return (
-        <div className="section" id={teamData.name} data-anchor={teamData.name}>
+        <div className="section" id={teamData.simpleName} data-anchor={teamData.simpleName}>
             <ThemeSwitcher theme={teamTheme}>
                 <div className="teamHome">
                     <Tilt className="Tilt" trackOnWindow={true} tiltMaxAngleX="20" tiltMaxAngleY="20"
@@ -28,16 +28,17 @@ function Team({teamData, setTeamDetails}) {
                           reset={false}>
                         {/*// REVOIR LA TAILLE DE LA VIDEO*/}
                         <video autoPlay muted data-autoplay loop id="myVideo">
-                            <source data-src={"/images/teams/"+teamData.name+"/compilation.mp4"} type="video/mp4"/>
+                            <source data-src={"/images/teams/"+teamData.simpleName+"/compilation.mp4"} type="video/mp4"/>
                         </video>
                         <div className="content">
                             <div className="Tilt-inner">
-                                <h1>{teamData.city}<br/>
-                                    <span>{teamData.name}</span></h1>
+                                <h1>{teamData.location}<br/>
+                                    <span>{teamData.simpleName}</span></h1>
                                 <div className="smallInfos">
-                                    <p>{teamData.abbreviation} <span></span> Conférence {conference}</p>
+                                    <p>{teamData.abbreviation}</p>
+                                    {/*<p>{teamData.abbreviation} <span></span> Conférence {conference}</p>*/}
                                 </div>
-                                <button onClick={() => setTeamDetails(teamData.id)}>
+                                <button onClick={() => setTeamDetails(teamData)}>
                                     Voir l'équipe
                                 </button>
                             </div>
